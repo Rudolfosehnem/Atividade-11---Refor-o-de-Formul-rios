@@ -97,6 +97,7 @@ button {
     display: flex;
     gap: 15px;
     margin-bottom: 15px;
+    align-items: 50%;
 }
 
 .form-row .form-group {

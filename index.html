@@ -1,201 +1,251 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário para validar</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para validar</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="container_back">
-  <h1 class="titulo">Formulário</h1>
-  <form id="formulario">
-    
-    <div class="form-group">
-      <label for="nome">Nome Completo</label>
-      <input type="text" id="nome" name="nome" placeholder="Insira seu nome..." required>
-      <span class="error" id="erro-nome"></span>
-    </div>
+    <div class="container_back">
+        <h1 class="titulo">Formulário</h1>
+        <form id="formulario">
+            <hr>
 
-    <div class="form-group">
-      <label for="cpf">CPF</label>
-      <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
-      <span class="error" id="erro-cpf"></span>
-    </div>
-    <div class="form-group">
-      <label for="genero">Gênero</label>
-      <select id="genero" name="genero" required>
-        <option value="">Selecione</option>
-        <option value="masculino">Masculino</option>
-        <option value="feminino">Feminino</option>
-        <option value="outro">Outro</option>
-      </select>
-      <span class="error" id="erro-genero"></span>
-    </div>
-    <div class="form-group">
-        <label for="estado-nasceu">Estado </label>
-        <select id="estado-nasceu" name="estado-nasceu" placeholder="Insira o estado em que voce mora..." required>
-          <option value="">Selecione</option>
-          <option value="estado0">Alagoas</option>
-          <option value="estado1">Acre</option>
-          <option value="estado2">Amapá</option>
-          <option value="estado3">Amazonas</option>
-          <option value="estado4">Bahia</option>
-          <option value="estado1">Ceará</option>
-          <option value="estado5">Distrito Federal</option>
-          <option value="estado6">Espírito Santo</option>
-          <option value="estado7">Goiás</option>
-          <option value="estado8">Maranhão</option>
-          <option value="estado9">Mato Grosso</option>
-          <option value="estado10">Mato Grosso do Sul</option>
-          <option value="estado11">Minas Gerais</option>
-          <option value="estado12">Pará</option>
-          <option value="estado13">Paraíba</option>
-          <option value="estado14">Paraná</option>
-          <option value="estado15">Pernambuco</option>
-          <option value="estado16">Piauí</option>
-          <option value="estado17">Rio de Janeiro</option>
-          <option value="estado18">Rio Grande do Norte</option>
-          <option value="estado19">Rio Grande do Sul</option>
-          <option value="estado20">Rondônia</option>
-          <option value="estado21">Roraima</option>
-          <option value="estado22">Santa Catarina</option>
-          <option value="estado23">São Paulo</option>
-          <option value="estado24">Sergipe</option>
-          <option value="estado25">Tocantins</option>
-        </select>
-        <span class="error" id="erro-estado-civil"></span>
-      </div>
-    <div class="form-group">
-      <label for="estado-civil">Estado Civil</label>
-      <select id="estado-civil" name="estado-civil" required>
-        <option value="">Selecione</option>
-        <option value="solteiro">Solteiro(a)</option>
-        <option value="casado">Casado(a)</option>
-        <option value="divorciado">Divorciado(a)</option>
-        <option value="viuvo">Viúvo(a)</option>
-      </select>
-      <span class="error" id="erro-estado-civil"></span>
-    </div>
-    <div class="form-group">
-      <label for="data-nascimento">Data de Nascimento</label>
-      <input type="date" id="data-nascimento" name="data-nascimento" required>
-      <span class="error" id="erro-data-nascimento"></span>
-    </div>
+            <div class="form-group">
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" placeholder="Insira seu nome..." required>
+                <span class="error" id="erro-nome"></span>
+            </div>
 
-    <div class="form-group">
-      <label for="endereco">Endereço</label>
-      <textarea id="endereco" name="endereco" rows="3" required></textarea>
-      <span class="error" id="erro-endereco"></span>
-    </div>
+            <div class="form-group">
 
-    <div class="form-group">
-      <label for="telefone">Telefone</label>
-      <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-      <span class="error" id="erro-telefone"></span>
-    </div>
-    <div class="form-group">
-      <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" placeholder="Insira seu email..." required>
-      <span class="error" id="erro-email"></span>
-    </div>
-    
-    <div class="form-group">
-      <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha"  placeholder="Insira sua senha..." required minlength="6">
-      <span class="error" id="erro-senha"></span>
-    </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="cpf">CPF</label>
 
-    <div class="form-group">
-        <label for="senha"> Confirme sua senha</label>
-        <input type="password" id="senha" name="senha"  placeholder="Escreva sua senha novamente..." required minlength="6">
-        <span class="error" id="erro-senha"></span>
-      </div>
-    
-    <button type="submit">Enviar</button>
-</div>
-  </form>
+                        <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required>
+                        <span class="error" id="erro-cpf"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="idade">Idade</label>
+                        <input type="numer" id="idade" name="complement" placeholder="Insira sua idade..." required>
+                    </div>
+                </div>
 
-  <script>
-    document.getElementById("formulario").addEventListener("submit", function(event) {
-      event.preventDefault(); 
+            </div>
+            <div class="form-group">
+                <label for="genero">Gênero</label>
+                <select id="genero" name="genero" required>
+                    <option value="">Selecione</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outro">Outro</option>
+                </select>
+                <span class="error" id="erro-genero"></span>
+            </div>
+            <div class="form-group">
+                <label for="estado-nasceu">Estado </label>
+                <select id="estado-nasceu" name="estado-nasceu" placeholder="Insira o estado em que voce mora..."
+                    required>
+                    <option value="">Selecione</option>
+                    <option value="estado0">Alagoas</option>
+                    <option value="estado1">Acre</option>
+                    <option value="estado2">Amapá</option>
+                    <option value="estado3">Amazonas</option>
+                    <option value="estado4">Bahia</option>
+                    <option value="estado1">Ceará</option>
+                    <option value="estado5">Distrito Federal</option>
+                    <option value="estado6">Espírito Santo</option>
+                    <option value="estado7">Goiás</option>
+                    <option value="estado8">Maranhão</option>
+                    <option value="estado9">Mato Grosso</option>
+                    <option value="estado10">Mato Grosso do Sul</option>
+                    <option value="estado11">Minas Gerais</option>
+                    <option value="estado12">Pará</option>
+                    <option value="estado13">Paraíba</option>
+                    <option value="estado14">Paraná</option>
+                    <option value="estado15">Pernambuco</option>
+                    <option value="estado16">Piauí</option>
+                    <option value="estado17">Rio de Janeiro</option>
+                    <option value="estado18">Rio Grande do Norte</option>
+                    <option value="estado19">Rio Grande do Sul</option>
+                    <option value="estado20">Rondônia</option>
+                    <option value="estado21">Roraima</option>
+                    <option value="estado22">Santa Catarina</option>
+                    <option value="estado23">São Paulo</option>
+                    <option value="estado24">Sergipe</option>
+                    <option value="estado25">Tocantins</option>
+                </select>
+                <span class="error" id="erro-estado-civil"></span>
+            </div>
+            <div class="form-group">
+                <label for="estado-civil">Estado Civil</label>
+                <select id="estado-civil" name="estado-civil" required>
+                    <option value="">Selecione</option>
+                    <option value="solteiro">Solteiro(a)</option>
+                    <option value="casado">Casado(a)</option>
+                    <option value="divorciado">Divorciado(a)</option>
+                    <option value="viuvo">Viúvo(a)</option>
+                </select>
+                <span class="error" id="erro-estado-civil"></span>
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+                <span class="error" id="erro-data-nascimento"></span>
+            </div>
 
-      
-      document.querySelectorAll(".error").forEach(el => el.textContent = "");
+            <div class="form-group">
 
-      let isValid = true;
 
-      
-      const nome = document.getElementById("nome").value;
-      if (nome.trim() === "") {
-        document.getElementById("erro-nome").textContent = "O nome é obrigatório.";
-        isValid = false;
-      }
 
-      
-      const cpf = document.getElementById("cpf").value;
-      const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
-      if (!cpfRegex.test(cpf)) {
-        document.getElementById("erro-cpf").textContent = "Por favor, insira um CPF válido (000.000.000-00).";
-        isValid = false;
-      }
+            </div>
 
-      
-      const genero = document.getElementById("genero").value;
-      if (genero === "") {
-        document.getElementById("erro-genero").textContent = "Por favor, selecione um gênero.";
-        isValid = false;
-      }
+            <div class="form">
+                <div class="form-group">
+                    <label for="city">Cidade*</label>
+                    <input type="text" id="city" name="city" placeholder="Insira a cidade que você mora..." required>
+                    <span class="erro-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="street">Rua*</label>
+                    <input type="text" id="street" name="street" placeholder="Insira a rua que você mora..." required>
+                    <span class="erro-message"></span>
+                </div>
+                <div class="form-group">
+                    <label for="cep">CEP*</label>
+                    <input type="text" id="cep" name="cep" maxlength="9" placeholder="Insira o cep da sua rua..."
+                        required>
+                    <span class="erro-message"></span>
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="number">Número*</label>
+                        <input type="text" id="number" name="number" placeholder="Insira o número da sua residencia..."
+                            required>
+                        <span class="erro-message"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="complement">Complemento</label>
+                        <input type="text" id="complement" name="complement"
+                            placeholder="Insira um Complemento, se houver...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                    <span class="error" id="erro-telefone"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="Insira seu email..." required>
+                    <span class="error" id="erro-email"></span>
+                </div>
 
-      
-      const estadoCivil = document.getElementById("estado-civil").value;
-      if (estadoCivil === "") {
-        document.getElementById("erro-estado-civil").textContent = "Por favor, selecione um estado civil.";
-        isValid = false;
-      }
+                <div class="form-group">
+                    <label for="senha">Senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Insira sua senha..." required
+                        minlength="6">
+                    <span class="error" id="erro-senha"></span>
+                </div>
 
-      
-      const dataNascimento = document.getElementById("data-nascimento").value;
-      if (!dataNascimento) {
-        document.getElementById("erro-data-nascimento").textContent = "Por favor, insira uma data de nascimento.";
-        isValid = false;
-      }
+                <div class="form-group">
+                    <label for="senha"> Confirme sua senha</label>
+                    <input type="password" id="senha" name="senha" placeholder="Escreva sua senha novamente..." required
+                        minlength="6">
+                    <span class="error" id="erro-senha"></span>
+                </div>
+                <hr>
 
-      
-      const endereco = document.getElementById("endereco").value;
-      if (endereco.trim() === "") {
-        document.getElementById("erro-endereco").textContent = "O endereço é obrigatório.";
-        isValid = false;
-      }
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
 
-      
-      const telefone = document.getElementById("telefone").value;
-      const telefoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
-      if (!telefoneRegex.test(telefone)) {
-        document.getElementById("erro-telefone").textContent = "Por favor, insira um telefone válido ((00) 00000-0000).";
-        isValid = false;
-      }
+        <script>
+            document.getElementById("formulario").addEventListener("submit", function (event) {
+                event.preventDefault();
 
-      
-      const email = document.getElementById("email").value;
-      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      if (!emailRegex.test(email)) {
-        document.getElementById("erro-email").textContent = "Por favor, insira um e-mail válido.";
-        isValid = false;
-      }
 
-      
-      const senha = document.getElementById("senha").value;
-      if (senha.length < 6) {
-        document.getElementById("erro-senha").textContent = "A senha deve ter pelo menos 6 caracteres.";
-        isValid = false;
-      }
+                document.querySelectorAll(".error").forEach(el => el.textContent = "");
 
-      if (isValid) {
-        alert("Formulário enviado com sucesso!");
-        this.submit(); 
-      }
-    });
-  </script>
+                let isValid = true;
+
+
+                const nome = document.getElementById("nome").value;
+                if (nome.trim() === "") {
+                    document.getElementById("erro-nome").textContent = "O nome é obrigatório.";
+                    isValid = false;
+                }
+
+
+                const cpf = document.getElementById("cpf").value;
+                const cpfRegex = /^\d{3}\.\d{3}\.\d{3}-\d{2}$/;
+                if (!cpfRegex.test(cpf)) {
+                    document.getElementById("erro-cpf").textContent = "Por favor, insira um CPF válido (000.000.000-00).";
+                    isValid = false;
+                }
+
+
+                const genero = document.getElementById("genero").value;
+                if (genero === "") {
+                    document.getElementById("erro-genero").textContent = "Por favor, selecione um gênero.";
+                    isValid = false;
+                }
+
+
+                const estadoCivil = document.getElementById("estado-civil").value;
+                if (estadoCivil === "") {
+                    document.getElementById("erro-estado-civil").textContent = "Por favor, selecione um estado civil.";
+                    isValid = false;
+                }
+
+
+                const dataNascimento = document.getElementById("data-nascimento").value;
+                if (!dataNascimento) {
+                    document.getElementById("erro-data-nascimento").textContent = "Por favor, insira uma data de nascimento.";
+                    isValid = false;
+                }
+
+
+                const endereco = document.getElementById("endereco").value;
+                if (endereco.trim() === "") {
+                    document.getElementById("erro-endereco").textContent = "O endereço é obrigatório.";
+                    isValid = false;
+                }
+
+
+                const telefone = document.getElementById("telefone").value;
+                const telefoneRegex = /^\(\d{2}\) \d{5}-\d{4}$/;
+                if (!telefoneRegex.test(telefone)) {
+                    document.getElementById("erro-telefone").textContent = "Por favor, insira um telefone válido ((00) 00000-0000).";
+                    isValid = false;
+                }
+
+
+                const email = document.getElementById("email").value;
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(email)) {
+                    document.getElementById("erro-email").textContent = "Por favor, insira um e-mail válido.";
+                    isValid = false;
+                }
+
+
+                const senha = document.getElementById("senha").value;
+                if (senha.length < 6) {
+                    document.getElementById("erro-senha").textContent = "A senha deve ter pelo menos 6 caracteres.";
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    alert("Formulário enviado com sucesso!");
+                    this.submit();
+                }
+            });
+        </script>
 </body>
+
 </html>
