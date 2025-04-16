@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container_back">
   <h1 class="titulo">Formulário</h1>
   <form id="formulario">
     
     <div class="form-group">
       <label for="nome">Nome Completo</label>
-      <input type="text" id="nome" name="nome" required>
+      <input type="text" id="nome" name="nome" placeholder="Insira seu nome..." required>
       <span class="error" id="erro-nome"></span>
     </div>
 
@@ -31,6 +32,40 @@
       </select>
       <span class="error" id="erro-genero"></span>
     </div>
+    <div class="form-group">
+        <label for="estado-nasceu">Estado </label>
+        <select id="estado-nasceu" name="estado-nasceu" placeholder="Insira o estado em que voce mora..." required>
+          <option value="">Selecione</option>
+          <option value="estado0">Alagoas</option>
+          <option value="estado1">Acre</option>
+          <option value="estado2">Amapá</option>
+          <option value="estado3">Amazonas</option>
+          <option value="estado4">Bahia</option>
+          <option value="estado1">Ceará</option>
+          <option value="estado5">Distrito Federal</option>
+          <option value="estado6">Espírito Santo</option>
+          <option value="estado7">Goiás</option>
+          <option value="estado8">Maranhão</option>
+          <option value="estado9">Mato Grosso</option>
+          <option value="estado10">Mato Grosso do Sul</option>
+          <option value="estado11">Minas Gerais</option>
+          <option value="estado12">Pará</option>
+          <option value="estado13">Paraíba</option>
+          <option value="estado14">Paraná</option>
+          <option value="estado15">Pernambuco</option>
+          <option value="estado16">Piauí</option>
+          <option value="estado17">Rio de Janeiro</option>
+          <option value="estado18">Rio Grande do Norte</option>
+          <option value="estado19">Rio Grande do Sul</option>
+          <option value="estado20">Rondônia</option>
+          <option value="estado21">Roraima</option>
+          <option value="estado22">Santa Catarina</option>
+          <option value="estado23">São Paulo</option>
+          <option value="estado24">Sergipe</option>
+          <option value="estado25">Tocantins</option>
+        </select>
+        <span class="error" id="erro-estado-civil"></span>
+      </div>
     <div class="form-group">
       <label for="estado-civil">Estado Civil</label>
       <select id="estado-civil" name="estado-civil" required>
@@ -61,17 +96,24 @@
     </div>
     <div class="form-group">
       <label for="email">E-mail</label>
-      <input type="email" id="email" name="email" required>
+      <input type="email" id="email" name="email" placeholder="Insira seu email..." required>
       <span class="error" id="erro-email"></span>
     </div>
     
     <div class="form-group">
       <label for="senha">Senha</label>
-      <input type="password" id="senha" name="senha" required minlength="6">
+      <input type="password" id="senha" name="senha"  placeholder="Insira sua senha..." required minlength="6">
       <span class="error" id="erro-senha"></span>
     </div>
+
+    <div class="form-group">
+        <label for="senha"> Confirme sua senha</label>
+        <input type="password" id="senha" name="senha"  placeholder="Escreva sua senha novamente..." required minlength="6">
+        <span class="error" id="erro-senha"></span>
+      </div>
     
     <button type="submit">Enviar</button>
+</div>
   </form>
 
   <script>
